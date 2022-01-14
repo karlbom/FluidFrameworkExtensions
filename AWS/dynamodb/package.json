@@ -1,0 +1,27 @@
+{
+  "name": "dynamodb-extension",
+  "version": "0.0.1",
+  "description": "Extension for Fluid to support dynamodb",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:compile": "npm run tsc",
+    "docker:build": "",
+    "tsc": "tsc",
+    "tsfmt": "tsfmt --verify",
+    "tsfmt:fix": "tsfmt --replace"
+  },
+  "author": "Marcus Karlbowski",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.19.0",
+    "typescript": "~4.1.3",
+    "typescript-formatter": "7.1.0"
+  },
+  "dependencies": {
+    "@fluidframework/server-services-core": "^0.1034.0",
+    "charwise": "^3.0.1",
+    "@aws-sdk/client-dynamodb": "^3.39.0",
+    "@aws-sdk/lib-dynamodb": "^3.39.0"
+  }
+}
